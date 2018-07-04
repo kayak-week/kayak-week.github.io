@@ -1,3 +1,0 @@
-//# sourceMappingURL=withoutPremiumBar.js.map
-webwaveAdsService=function(){return{initAdvertButton:function(){var c=pageService.updateBackgroundSize;pageService.updateBackgroundSize=function(){c();var b=$("#ww_advertisement_bottom_container_wrapper");if(1==b.length){var a=$('#container > div[fixed != "true"]'),a=groupService.filterEmptyGroups(a),a=utilService.getLowestPostionInList(a,!0)+b.outerHeight();a>$(window).height()&&(b=Math.min(a-$(window).height(),b.outerHeight()),$("body").css("height","+="+b+"px"))}};pageService.updateBackgroundSize()},
-showWebwaveAds:function(){var c=$("#ww_advertisement_bottom_container_wrapper");webwave.isDef(c)&&c.show()}}}();
