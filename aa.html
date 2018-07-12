@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wykres</title>
+		<meta name="description" content="Wykres" />
+		
+		<!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/black.js"></script>
+		
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "serial",
+					"balloonDateFormat": "",
+					"categoryField": "category",
+					"columnSpacing": 0,
+					"autoMarginOffset": 7,
+					"marginLeft": 24,
+					"plotAreaBorderAlpha": 1,
+					"plotAreaBorderColor": "#1A4E5B",
+					"plotAreaFillAlphas": 1,
+					"plotAreaFillColors": "#1A4E5B",
+					"zoomOutButtonImageSize": 14,
+					"zoomOutText": "pokaż wszystko",
+					"sequencedAnimation": false,
+					"startDuration": 1,
+					"startEffect": "easeOutSine",
+					"accessible": false,
+					"backgroundAlpha": 1,
+					"backgroundColor": "#1A4E5B",
+					"borderColor": "#1A4E5B",
+					"color": "#768E94",
+					"theme": "black",
+					"categoryAxis": {
+						"autoRotateAngle": 0,
+						"dateFormats": [
+							{
+								"period": "fff",
+								"format": "JJ:NN:SS"
+							},
+							{
+								"period": "ss",
+								"format": "JJ:NN:SS"
+							},
+							{
+								"period": "mm",
+								"format": "JJ:NN"
+							},
+							{
+								"period": "hh",
+								"format": "JJ:NN"
+							},
+							{
+								"period": "DD",
+								"format": "MMM DD"
+							},
+							{
+								"period": "WW",
+								"format": "MMM DD"
+							},
+							{
+								"period": "MM",
+								"format": "MMM"
+							},
+							{
+								"period": "YYYY",
+								"format": "YYYY"
+							}
+						],
+						"gridPosition": "start",
+						"axisAlpha": 0,
+						"fontSize": 8,
+						"title": "",
+						"titleBold": false
+					},
+					"chartCursor": {
+						"enabled": true,
+						"animationDuration": 0,
+						"balloonPointerOrientation": " vertical",
+						"bulletSize": 4,
+						"categoryBalloonAlpha": 0,
+						"categoryBalloonColor": "undefined",
+						"categoryBalloonDateFormat": "",
+						"categoryBalloonEnabled": false,
+						"categoryBalloonText": "czas",
+						"color": "#FFFFFF",
+						"cursorColor": "#E3E3E3",
+						"cursorPosition": "mouse",
+						"graphBulletSize": 0,
+						"leaveAfterTouch": false,
+						"leaveCursor": true,
+						"tabIndex": -3,
+						"valueLineAlpha": 0.47,
+						"valueLineEnabled": true,
+						"zoomable": false
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonColor": "undefined",
+							"balloonText": "[[value]] km",
+							"bulletAlpha": 0.5,
+							"bulletBorderColor": "#14E180",
+							"bulletColor": "#AA1189",
+							"color": "undefined",
+							"cursorBulletAlpha": 0.39,
+							"fillAlphas": 0.7,
+							"gapPeriod": 5,
+							"id": "AmGraph-1",
+							"lineAlpha": 0,
+							"lineColor": "#50F2A4",
+							"lineThickness": 9,
+							"maxBulletSize": 47,
+							"negativeFillAlphas": 1,
+							"negativeFillColors": "#7E752F",
+							"negativeLineAlpha": 0.31,
+							"title": "graph 1",
+							"topRadius": 1.54,
+							"valueField": "column-1"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							"minVerticalGap": 33,
+							"title": ""
+						}
+					],
+					"allLabels": [],
+					"balloon": {
+						"color": "#5E7D85",
+						"offsetY": 1,
+						"pointerWidth": 1,
+						"shadowAlpha": 0
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "11:00",
+							"column-1": "0"
+						},
+						{
+							"category": "11:10",
+							"column-1": "0.84"
+						},
+						{
+							"category": "11:20",
+							"column-1": "1.67"
+						},
+						{
+							"category": "11:30",
+							"column-1": "2.51"
+						},
+						{
+							"category": "11:40",
+							"column-1": "3.34"
+						},
+						{
+							"category": "11:50",
+							"column-1": "4.18"
+						},
+						{
+							"category": "12:00",
+							"column-1": "5.01"
+						},
+						{
+							"category": "12:10",
+							"column-1": "5.85"
+						},
+						{
+							"category": "12:20",
+							"column-1": "6.68"
+						},
+						{
+							"category": "12:30",
+							"column-1": "7.52"
+						},
+						{
+							"category": "12:40",
+							"column-1": "8.35"
+						},
+						{
+							"category": "12:50",
+							"column-1": "9.19"
+						},
+						{
+							"category": "13:00",
+							"column-1": "10.02"
+						},
+						{
+							"category": "13:10",
+							"column-1": "10.86"
+						},
+						{
+							"category": "13:20",
+							"column-1": "11.69"
+						},
+						{
+							"category": "13:30",
+							"column-1": "12.53"
+						},
+						{
+							"category": "13:40",
+							"column-1": "13.36"
+						},
+						{
+							"category": "13:50",
+							"column-1": "14.2"
+						},
+						{
+							"category": "14:00",
+							"column-1": "15.03"
+						},
+						{
+							"category": "14:10",
+							"column-1": "15.87"
+						},
+						{
+							"category": "14:20",
+							"column-1": "16.7"
+						}
+					]
+				}
+			);
+		</script>
+        
+<style>
+    html,body   {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                }
+
+    #chartdiv   {
+                width: 100%;
+                height: 100%;
+                }
+</style>
+        
+        
+	</head>
+	<body>
+		<div id="chartdiv" style="width: 100%; background-color: #1A4E5B;" ></div>
+	</body>
+</html>
